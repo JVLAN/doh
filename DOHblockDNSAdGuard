@@ -1,0 +1,57 @@
+! DoH-Blocklist for AdGuard Home – v2025-07-13
+! Purpose : block the hostnames used exclusively by public DNS-over-HTTPS resolvers.
+! Safe : none of these FQDNs serve normal web sites.
+! Format : AdGuard / Adblock DNS rules (see AdGuard Home wiki)  :contentReference[oaicite:0]{index=0}
+
+# ── Cloudflare ───────────────────────────────────────────
+cloudflare-dns.com
+mozilla.cloudflare-dns.com
+chrome.cloudflare-dns.com
+one.one.one.one
+1dot1dot1dot1.cloudflare-dns.com
+security.cloudflare-dns.com
+family.cloudflare-dns.com
+dns64.cloudflare-dns.com
+
+# ── Google ───────────────────────────────────────────────
+dns.google
+dns.google.com
+dns64.dns.google
+8888.google
+
+# ── Quad9 ────────────────────────────────────────────────
+dns.quad9.net
+dns9.quad9.net
+dns10.quad9.net
+dns11.quad9.net
+
+# ── NextDNS (wild-card) ──────────────────────────────────
+/(\.|^)dns\.nextdns\.io$/
+
+# ── CleanBrowsing ────────────────────────────────────────
+doh.cleanbrowsing.org
+family-filter-dns.cleanbrowsing.org
+adult-filter-dns.cleanbrowsing.org
+security-filter-dns.cleanbrowsing.org
+
+# ── Cisco / OpenDNS ──────────────────────────────────────
+doh.opendns.com
+doh.familyshield.opendns.com
+
+# ── Comcast (Xfinity) ────────────────────────────────────
+doh.xfinity.com
+
+# ── Cox ──────────────────────────────────────────────────
+doh.cox.net
+
+# ── DNS.SB ───────────────────────────────────────────────
+doh.dns.sb
+dns.sb
+
+# ── CZ.NIC public resolver ───────────────────────────────
+odvr.nic.cz
+
+# ── AdGuard public DNS (block if you don’t want users to switch) ─
+dns.adguard-dns.com
+family.adguard-dns.com
+unfiltered.adguard-dns.com
